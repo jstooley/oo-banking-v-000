@@ -5,4 +5,8 @@ def initialize(name)
   @balance = 1000
   @status = "open"
 end
+
+def name 
+  @name.freeze
+end
 end
