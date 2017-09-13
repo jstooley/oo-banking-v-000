@@ -17,4 +17,7 @@ class Transfer
   def status
     @status
   end
+  def valid?
+    self.sender && self.receiver
+  end
 end
