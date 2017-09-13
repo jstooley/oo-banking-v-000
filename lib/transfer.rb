@@ -1,3 +1,4 @@
 class Transfer
-  # your code here
+  def initialize(name_1, name_2, amount)
+  end
 end
