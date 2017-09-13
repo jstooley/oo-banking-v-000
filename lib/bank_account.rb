@@ -14,7 +14,7 @@ def balance
   @balance.dup.freeze
 end
 
-def status 
+def status
   @status.dup.freeze
 end
 end
