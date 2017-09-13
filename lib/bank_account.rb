@@ -6,7 +6,7 @@ def initialize(name)
   @status = "open"
 end
 
-def name 
-  @name.freeze
+def name
+  @name.dup.freeze
 end
 end
