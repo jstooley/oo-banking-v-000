@@ -10,7 +10,7 @@ def name
   @name.dup.freeze
 end
 
-def display_balance
+def balance
   @balance.dup.freeze
 end
 
