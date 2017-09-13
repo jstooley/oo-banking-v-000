@@ -18,6 +18,6 @@ class Transfer
     @status
   end
   def valid?
-    self.sender && self.receiver
+    self.sender.valid? && self.receiver.valid?
   end
 end
