@@ -11,7 +11,7 @@ def name
 end
 
 def balance
-  @balance.dup.freeze
+  @balance
 end
 
 def status
