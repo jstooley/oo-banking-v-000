@@ -11,4 +11,7 @@ class Transfer
   def receiver
     @receiver
   end
+  def amount
+    @amount
+  end
 end
