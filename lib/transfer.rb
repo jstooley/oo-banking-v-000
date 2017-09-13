@@ -24,7 +24,7 @@ class Transfer
     if status != "complete"
       self.sender.balance - self.amount
       self.receiver.balance + self.amount
-      self.status = "complete"
+      @status = "complete"
     end
   end
 end
