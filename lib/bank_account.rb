@@ -10,7 +10,11 @@ def name
   @name.dup.freeze
 end
 
-def balance 
+def balance
   @balance.dup.freeze
+end
+
+def status 
+  @status.dup.freeze
 end
 end
