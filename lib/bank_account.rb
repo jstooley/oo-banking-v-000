@@ -9,4 +9,8 @@ end
 def name
   @name.dup.freeze
 end
+
+def balance 
+  @balance.dup.freeze
+end
 end
