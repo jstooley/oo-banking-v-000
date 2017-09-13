@@ -31,6 +31,6 @@ class BankAccount
     self.balance > 0 && self.status == "open"
   end
   def close_account
-    self.delete
+    self.clear
   end
 end
