@@ -1,31 +1,32 @@
 class BankAccount
 
-def initialize(name)
-  @name = name
-  @balance = 1000
-  @status = "open"
-end
+  def initialize(name)
+    @name = name
+    @balance = 1000
+    @status = "open"
+  end
 
-def name
-  @name.dup.freeze
-end
+  def name
+    @name.dup.freeze
+  end
 
-def balance
-  @balance
-end
+  def balance
+    @balance
+  end
 
-def status
-  @status.dup.freeze
-end
+  def status
+    @status.dup.freeze
+  end
 
-def deposit(amount)
-  @balance += amount
-end
+  def deposit(amount)
+    @balance += amount
+  end
 
-def display_balance
-  "Your balance is $#{@balance}."
-end
+  def display_balance
+    "Your balance is $#{@balance}."
+  end
 
-def valid
-  @balance > 0 && status == "open"
+  def valid
+    @balance > 0 && status == "open"
+  end
 end
