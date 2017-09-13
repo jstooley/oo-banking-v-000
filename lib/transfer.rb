@@ -14,4 +14,7 @@ class Transfer
   def amount
     @amount
   end
+  def status
+    @status
+  end
 end
