@@ -22,8 +22,8 @@ class Transfer
   end
   def execute_transaction
     if status != "complete"
-      self.sender.balance - self.amount
-      self.receiver.balance + self.amount
+      self.sender.deposit(-self.amount)
+      self.receiver.deposit(self.amount)
       @status = "complete"
     end
   end
