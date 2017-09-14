@@ -1,5 +1,5 @@
 class Transfer
-  
+
   def initialize(sender, receiver, amount)
     @sender = sender
     @receiver = receiver
@@ -41,6 +41,8 @@ class Transfer
   end
 
   def reverse_transfer
+    if status == "complete"
+    end
   end
   
 end
