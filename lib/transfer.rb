@@ -42,7 +42,9 @@ class Transfer
 
   def reverse_transfer
     if status == "complete"
+      self.sender.deposit(self.amount)
+      self.receiver.deposit(-self.amount)
     end
   end
-  
+
 end
